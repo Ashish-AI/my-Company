@@ -6,6 +6,7 @@ import About from './About.jsx';
 import Contact from './Contact.jsx';
 import Service from './Service.jsx';
 import Navbar from './Navbar.jsx';
+import Footer from "./Footer.jsx"
 
 import {Switch, Route, Redirect } from "react-router-dom";
 
@@ -21,6 +22,7 @@ const App=()=>{
         {/* if any wrong input is given while giving path */}
         <Redirect  to='/' />
         </Switch>
+        <Footer/>
         </>
     );
 };
